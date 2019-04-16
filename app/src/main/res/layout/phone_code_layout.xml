@@ -1,0 +1,332 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="10dp"
+    tools:context="sagsaguz.joyage.PhoneCodeActivity">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="50dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toTopOf="@+id/rlButtons"
+        android:id="@+id/llPhoneCode">
+
+        <EditText
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:background="@android:color/transparent"
+            android:textColor="@color/colorAccent"
+            android:textSize="20sp"
+            android:hint="-"
+            android:cursorVisible="false"
+            android:layout_margin="2dp"
+            android:gravity="center"
+            android:id="@+id/pass1"/>
+
+        <EditText
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:background="@android:color/transparent"
+            android:textColor="@color/colorAccent"
+            android:textSize="20sp"
+            android:hint="-"
+            android:cursorVisible="false"
+            android:layout_margin="2dp"
+            android:gravity="center"
+            android:id="@+id/pass2"/>
+
+        <EditText
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:background="@android:color/transparent"
+            android:textColor="@color/colorAccent"
+            android:textSize="20sp"
+            android:hint="-"
+            android:cursorVisible="false"
+            android:layout_margin="2dp"
+            android:gravity="center"
+            android:id="@+id/pass3"/>
+
+        <EditText
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:background="@android:color/transparent"
+            android:textColor="@color/colorAccent"
+            android:textSize="20sp"
+            android:hint="-"
+            android:cursorVisible="false"
+            android:layout_margin="2dp"
+            android:gravity="center"
+            android:id="@+id/pass4"/>
+
+        <EditText
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:background="@android:color/transparent"
+            android:textColor="@color/colorAccent"
+            android:textSize="20sp"
+            android:hint="-"
+            android:cursorVisible="false"
+            android:layout_margin="2dp"
+            android:gravity="center"
+            android:id="@+id/pass5"/>
+
+        <EditText
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:background="@android:color/transparent"
+            android:textColor="@color/colorAccent"
+            android:textSize="20sp"
+            android:hint="-"
+            android:cursorVisible="false"
+            android:layout_margin="2dp"
+            android:gravity="center"
+            android:id="@+id/pass6"/>
+
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Enter the 6-digit code we sent to the\nnumber: "
+        android:textSize="14sp"
+        android:textColor="@color/colorBlack"
+        android:gravity="center"
+        android:layout_marginBottom="25dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/llPhoneCode"
+        android:id="@+id/tvConfirmMessage"/>
+
+    <TextView
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Phone code\nVerification"
+        android:textColor="@color/colorBlack"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:gravity="center"
+        android:layout_marginBottom="15dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/tvConfirmMessage"/>
+
+    <RelativeLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toTopOf="@+id/llButtons"
+        android:id="@+id/rlButtons">
+
+        <android.support.v7.widget.CardView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:cardCornerRadius="20dp"
+            android:elevation="2dp"
+            app:cardBackgroundColor="@color/colorShadow"
+            android:layout_marginBottom="10dp"
+            android:id="@+id/cvPrevious">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:src="@drawable/ic_previous"
+                android:layout_gravity="center"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="5dp"
+                android:layout_marginStart="25dp"
+                android:layout_marginEnd="25dp"/>
+
+        </android.support.v7.widget.CardView>
+
+        <android.support.v7.widget.CardView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:cardCornerRadius="20dp"
+            android:elevation="2dp"
+            android:layout_alignParentEnd="true"
+            app:cardBackgroundColor="@color/colorAccent"
+            android:layout_marginBottom="10dp"
+            android:id="@+id/cvNext">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:src="@drawable/ic_next"
+                android:layout_gravity="center"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="5dp"
+                android:layout_marginStart="25dp"
+                android:layout_marginEnd="25dp"/>
+
+        </android.support.v7.widget.CardView>
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorShadow"
+        android:orientation="vertical"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:id="@+id/llButtons">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:layout_weight="3">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:text="1"
+                android:textSize="24dp"
+                android:gravity="center"
+                android:id="@+id/tv1"/>
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:text="2"
+                android:textSize="24dp"
+                android:gravity="center"
+                android:id="@+id/tv2"/>
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:text="3"
+                android:textSize="24dp"
+                android:gravity="center"
+                android:id="@+id/tv3"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:layout_weight="3">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:text="4"
+                android:textSize="24dp"
+                android:gravity="center"
+                android:id="@+id/tv4"/>
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:text="5"
+                android:textSize="24dp"
+                android:gravity="center"
+                android:id="@+id/tv5"/>
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:text="6"
+                android:textSize="24dp"
+                android:gravity="center"
+                android:id="@+id/tv6"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:layout_weight="3">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:text="7"
+                android:textSize="24dp"
+                android:gravity="center"
+                android:id="@+id/tv7"/>
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:text="8"
+                android:textSize="24dp"
+                android:gravity="center"
+                android:id="@+id/tv8"/>
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:text="9"
+                android:textSize="24dp"
+                android:gravity="center"
+                android:id="@+id/tv9"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:layout_weight="3">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:textSize="24dp"
+                android:gravity="center"/>
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:text="0"
+                android:textSize="24dp"
+                android:gravity="center"
+                android:id="@+id/tv0"/>
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:text="X"
+                android:textSize="24dp"
+                android:gravity="center"
+                android:id="@+id/tvX"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</android.support.constraint.ConstraintLayout>
